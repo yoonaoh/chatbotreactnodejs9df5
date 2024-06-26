@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0.0",
+  "components": [
+    {
+      "id": "frontend",
+      "friendlyName": "Chatbot Frontend",
+      "type": "static",
+      "appLocation": "./client",
+      "linkedTo": ["backend"],
+      "outputLocation": "build"
+    },
+    {
+      "id": "backend",
+      "friendlyName": "Chatbot Backend",
+      "type": "api",
+      "appLocation": "./server",
+      "ingressPort": "3001"
+    }
+  ]
+}
